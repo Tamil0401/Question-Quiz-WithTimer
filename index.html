@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="exam-wrapper">
+        <!-- Header Section -->
+      <div class="header">
+        <h2>Online Examination</h2>
+        <div class="timer-box">⏱ <span id="timer">10:00</span></div>
+      </div>
+
+      <!-- Main Exam -->
+      <div id="examArea">
+        <div class="question-section">
+          <h3 id="question"></h3>
+          <ul id="options"></ul>
+
+          <div class="controls">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="markReview()">Mark for Review</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="submitExam()">Submit</button>
+          </div>
+        </div>
+
+        <!-- Question Palette -->
+        <div class="palette" id="palette"></div>
+      </div>
+
+      <!-- Result Section -->
+      <div id="resultArea" class="hidden">
+        <h2>Result Summary</h2>
+        <p id="finalScore"></p>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <div id="answerSummary"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
